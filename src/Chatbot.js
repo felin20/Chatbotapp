@@ -58,7 +58,7 @@ const Chatbot = () => {
         handleUserMessage(action);
         setCurrentAction(action); 
 
-        // Reset all states
+        
         setWaitingForOrderNumber(false);
         setWaitingForResponse(false);
         setWaitingForContactInfo(false);
@@ -144,7 +144,7 @@ const Chatbot = () => {
     };
 
     const handleProductSearch = (productName) => {
-        setWaitingForProductName(false); // Reset the state
+        setWaitingForProductName(false); 
         const matchedProducts = productData.filter(product =>
             product.name.toLowerCase().includes(productName)
         );
